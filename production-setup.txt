@@ -1,26 +1,26 @@
 End To End Node JS Production Setup
 
-overview
-Node Projects
-Git & GitHub
-Husky
-TypeScript
-Folder Structure
-Commit Lint
-ES Lint
-Prettier
-Project Environment
-Express JS
-Global Error Handler
-404 Handler
-Logger
-Source Map
-Colourful Terminal
-MongoDB
-Database Log Storage
-Database Migration
-Health Endpoint
-Security - CORS
-Security - Rate Limiting
-Dependency Updates
-Docker
+
+1. Node Projects
+2. Git & GitHub
+3. Husky - Leverages Git hooks to enforce code quality standards and run tests before commits and pushes, ensuring that only quality code is added to the repository
+4. TypeScript
+5. Folder Structure
+6. Commit Lint
+7. ES Lint
+8. Prettier
+9. Project Environment
+10.Express JS
+11.Global Error Handler
+12.404 Handler
+13.Logger
+14.Source Map
+15.Colourful Terminal
+16.MongoDB
+17.Database Log Storage
+18.Database Migration
+19.Health Endpoint
+20.Security - CORS
+21.Security - Rate Limiting
+22.Dependency Updates
+23.Docker
