@@ -4,7 +4,7 @@ End To End Node JS Production Setup
 1. Node Projects
 2. Git & GitHub
 3. Husky - Leverages Git hooks to enforce code quality standards and run tests before commits and pushes, ensuring that only quality code is added to the repository
-4. TypeScript
+4. TypeScript - With TypeScript, you define variable types explicitly, catching potential errors at compile time rather than runtime.
 5. Folder Structure
 6. Commit Lint
 7. ES Lint
