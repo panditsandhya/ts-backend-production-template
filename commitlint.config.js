@@ -1,23 +1,21 @@
-module.exports = {
-    extends: ["@commitlint/cli", "@commitlint/config-conventional"],
+// @ts-check
+
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+// import eslintConfigPrettier from 'eslint-config-prettier'
+
+export default tseslint.config({
+    languageOptions: {
+        parserOptions: {
+            project: true,
+            tsconfigRootDir: import.meta.dirname
+        }
+    },
+    files: ['**/*.ts'],
+    extends: [eslint.configs.recommended, ...tseslint.configs.recommendedTypeChecked,],
     rules: {
-        "type-enum": [
-            2,
-            "always",
-            [
-                "feat",
-                "fix",
-                "docs",
-                "style",
-                "refactor",
-                "perf",
-                "test",
-                "build",
-                "ci",
-                "chore",
-                "revert"
-            ]
-        ],
-        "subject-case": [2, "always", "sentence-case"]
+        'no-console': 'error',
+        'no-useless-catch': 0,
+        quotes: ['error', 'single', { allowTemplateLiterals: true }]
     }
-}
+})

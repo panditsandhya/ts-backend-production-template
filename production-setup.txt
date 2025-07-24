@@ -8,7 +8,7 @@ End To End Node JS Production Setup
 5. Folder Structure
 6. Commit Lint - Commitlint is a tool used to lint commit messages, ensuring they follow a specific format, often the Conventional Commits specification. It helps maintain consistency and clarity in a project's commit history, which is crucial for generating changelogs and understanding the project's evolution / Commitlint primarily enforces the Conventional Commits specification, which structures commit messages with a type (e.g., feat, fix, chore), optional scope, and a description. 
 
-7. ES Lint - Commitlint primarily enforces the Conventional Commits specification, which structures commit messages with a type (e.g., feat, fix, chore), optional scope, and a description. 
+7. ES Lint - ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
 8. Prettier
 9. Project Environment
 10.Express JS
