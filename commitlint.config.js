@@ -1,21 +1,24 @@
-// @ts-check
 
-import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
-// import eslintConfigPrettier from 'eslint-config-prettier'
-
-export default tseslint.config({
-    languageOptions: {
-        parserOptions: {
-            project: true,
-            tsconfigRootDir: import.meta.dirname
-        }
-    },
-    files: ['**/*.ts'],
-    extends: [eslint.configs.recommended, ...tseslint.configs.recommendedTypeChecked,],
-    rules: {
-        'no-console': 'error',
-        'no-useless-catch': 0,
-        quotes: ['error', 'single', { allowTemplateLiterals: true }]
-    }
-})
+export default {
+  extends: ["@commitlint/config-conventional"],
+  rules: {
+    "type-enum": [
+      2,
+      "always",
+      [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
+      ]
+    ],
+    "subject-case": [2, "always", "sentence-case"]
+  }
+};
