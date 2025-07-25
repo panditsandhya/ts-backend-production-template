@@ -3,6 +3,7 @@ import responseMessage from '../constant/responseMessage';
 import { Thttperror } from '../types/types';
 import config from '../config/config';
 import { EApplicationEnvironment } from '../constant/application';
+import logger from './logger';
 
 
 // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
@@ -21,9 +22,9 @@ export default(err: Error | unknown, req: Request, errorStatusCode: number = 500
   }
 
   //log
-  // console.error(`CONTROLLER_ERROR`, {
-  //   meta: errorObj
-  // })
+  logger.error(`CONTROLLER_ERROR`, {
+    meta: errorObj
+  })
 
   //production Env check
   if(config.ENV === EApplicationEnvironment.PRODUCTION) {
