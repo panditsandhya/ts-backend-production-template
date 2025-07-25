@@ -4,6 +4,10 @@ import util from 'util'
 import config from '../config/config'
 import { EApplicationEnvironment } from '../constant/application'
 import path from 'path'
+import * as SourceMapSupport from  'source-map-support'
+
+//linking trace support
+SourceMapSupport.install()
 
 
 const consoleLogFormat = format.printf((info) => {
